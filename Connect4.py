@@ -24,7 +24,7 @@ def play(choice, grid, player): #set tokens
     for j in range(8): #cycle through columns
       if (j == int(choice)): #find chosen column
         if (isinstance(grid[int(7-i)][int(j-1)], int) == True): #find row in column that is an empty space
-                                                                #(int(8-i) is to find row position and im lazy simplify cause the thing daofan)
+                                                                #(int(8-i) is to find row position)
                                                                 #(int(j-1) is to find column position)
           if (player == True): #player x
             grid[int(7-i)][int(j-1)] = 'x'
